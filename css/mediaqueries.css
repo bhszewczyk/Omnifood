@@ -1,0 +1,264 @@
+/*
+BREAKPOINTS CALCULATIONS
+
+1: 1350/16 = ~84em (1344px)
+2: 1200/16 = 75em
+3: 1000/16 = 62.5em
+4: 800/16 = 50em
+*/
+
+/**********************/
+/* BELOW 1344px */
+/**********************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-1 {
+    font-size: 4.4rem;
+  }
+
+  .heading-2 {
+    font-size: 3.6rem;
+  }
+
+  .heading-3 {
+    font-size: 2.4rem;
+  }
+
+  .delivered-text {
+    font-size: 1.6rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**********************/
+/* BELOW 1200px */
+/**********************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/**********************/
+/* BELOW 1000px */
+/**********************/
+
+@media (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-nav-list {
+    gap: 0.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:link:visited {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 2.4;
+  }
+
+  .hero {
+    grid-template-columns: 3fr 2fr;
+    gap: 4.8rem;
+  }
+
+  .img-logo {
+    height: 2.4rem;
+  }
+
+  .section-testimonials-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonials-container {
+    padding: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    justify-content: space-around;
+  }
+}
+
+/**********************/
+/* BELOW 800px */
+/**********************/
+
+@media (max-width: 50em) {
+  html {
+    font-size: 45%;
+  }
+
+  .header {
+    padding: 2.4rem;
+    justify-content: space-between;
+  }
+
+  /* MOBILE */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .top-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: top;
+    justify-content: right;
+    padding-top: 9.6rem;
+    padding-right: 2.8rem;
+    transition: all 1s ease-in;
+
+    /* HIDE NAVIGATION */
+    /* 1 hide visally */
+    opacity: 0;
+
+    /* 2 Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3 Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .top-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-menu[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-menu[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 4.4rem;
+  }
+
+  /* END OF MOBILE NAV */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-img {
+    text-align: center;
+    /* width: 80%; */
+  }
+
+  .meals-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .diets .heading-3 {
+    text-align: center;
+  }
+
+  .diets .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-testimonials-gallery {
+    gap: 2.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-plan {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .pricing-plan--promoted {
+    transform: scale(1.05);
+  }
+
+  .features-container {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3.2rem;
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+
+  .feature {
+    text-align: center;
+  }
+
+  .section-cta {
+    padding: 2.4rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 2.4rem;
+    padding: 1.2rem;
+  }
+
+  .cta-img-box {
+    height: 64rem;
+    background-position: center;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " b " " social ";
+  }
+
+  .social {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  .social-media {
+    width: 20%;
+    margin: 0 auto;
+  }
+}

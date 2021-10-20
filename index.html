@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
 
     <script
       type="module"
@@ -37,6 +38,11 @@
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-menu" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -475,7 +481,7 @@
           <h2 class="heading-2">Eat well, start today!</h2>
         </div>
 
-        <div class="centered-container grid grid--2-cols margin-bottom-big">
+        <div class="plans-container centered-container grid grid--2-cols margin-bottom-big">
           <div class="pricing-plan justify-right">
             <header class="plan-header">
               <p class="plan-name">Starter</p>
@@ -563,7 +569,7 @@
           </aside>
         </div>
 
-        <div class="centered-container grid grid--4-cols">
+        <div class="features-container centered-container grid grid--4-cols">
           <div class="feature">
             <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
             <p class="feature-title">Never cook again!</p>
@@ -661,36 +667,7 @@
 
     <footer class="section-footer">
       <div class="centered-container grid grid--5-cols footer-container">
-        <div class="social">
-          <a href="#">
-            <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo"
-          /></a>
-          <div class="social-media">
-            <ul class="social-links">
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon class="social-logo" name="logo-facebook"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon
-                    class="social-logo"
-                    name="logo-instagram"
-                  ></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon class="social-logo" name="logo-twitter"></ion-icon
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <p class="copyright">
-            Copyright © 2021 by Omnifood, Inc. All right reserved.
-          </p>
-        </div>
+        
         <div class="address">
           <p class="footer-heading">Contact us</p>
           <address class="contacts">
@@ -727,7 +704,37 @@
             <li><a class="footer-link" href="#">Privacy & terms</a></li>
           </ul>
         </nav>
-      </div>
+      
+      <div class="social">
+          <a href="#">
+            <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo"
+          /></a>
+          <div class="social-media">
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-logo" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-logo"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-logo" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">
+            Copyright © 2021 by Omnifood, Inc. All right reserved.
+          </p>
+        </div></div>
     </footer>
   </body>
 </html>
