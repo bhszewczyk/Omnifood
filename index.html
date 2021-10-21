@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Author: Barbara Szewczyk. Page for imaginary food company. All information there are fake. The purpose of this page is to learn, practice and use my current knowledge of HTML and CSS."
+    />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple=touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +26,13 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <title>Omnifood</title>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -481,7 +495,14 @@
           <h2 class="heading-2">Eat well, start today!</h2>
         </div>
 
-        <div class="plans-container centered-container grid grid--2-cols margin-bottom-big">
+        <div
+          class="
+            plans-container
+            centered-container
+            grid grid--2-cols
+            margin-bottom-big
+          "
+        >
           <div class="pricing-plan justify-right">
             <header class="plan-header">
               <p class="plan-name">Starter</p>
@@ -645,7 +666,6 @@
                     <option value="Pescatarian">Pescatarian</option>
                     <option value="Gluten-free">Gluten-free</option>
                     <option value="Lactose-free">Lactose-free</option>
-                    value=""
                     <option value="Keto">Keto</option>
                     <option value="Paleo">Paleo</option>
                     <option value="">Low FODMAP</option>
@@ -667,14 +687,18 @@
 
     <footer class="section-footer">
       <div class="centered-container grid grid--5-cols footer-container">
-        
         <div class="address">
           <p class="footer-heading">Contact us</p>
           <address class="contacts">
-            <p class="margin-bottom-sm">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p class="margin-bottom-sm">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
             <p>
-              <a class="footer-linkhref="tel:415-201-6370">415-201-6370</a><br />
-              <a class="footer-link href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+              <a class="footer-link" href="tel:+415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@omnifood.com</a
+              >
             </p>
           </address>
         </div>
@@ -704,8 +728,8 @@
             <li><a class="footer-link" href="#">Privacy & terms</a></li>
           </ul>
         </nav>
-      
-      <div class="social">
+
+        <div class="social">
           <a href="#">
             <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo"
           /></a>
@@ -732,9 +756,11 @@
             </ul>
           </div>
           <p class="copyright">
-            Copyright © 2021 by Omnifood, Inc. All right reserved.
+            Copyright © <span class="year">2027</span> by Omnifood, Inc. All
+            right reserved.
           </p>
-        </div></div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
