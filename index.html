@@ -636,10 +636,11 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form class="cta-form" action="#">
+              <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full Name:</label>
                   <input
+                    name="full-name"
                     class="inputs"
                     id="full-name"
                     type="text"
@@ -650,6 +651,7 @@
                 <div>
                   <label for="email">E-mail:</label>
                   <input
+                    name="e-mail"
                     class="inputs"
                     id="email"
                     type="email"
@@ -659,7 +661,12 @@
                 </div>
                 <div>
                   <label for="select-diet">What diet you are up to?</label>
-                  <select id="select-diet" required class="inputs">
+                  <select
+                    name="chosen-diet"
+                    id="select-diet"
+                    required
+                    class="inputs"
+                  >
                     <option value="">- Please select your diet -</option>
                     <option value="Vegetarian">Vegetarian</option>
                     <option value="">Vegan</option>
